@@ -27,4 +27,4 @@ RUN dotnet build
 
 EXPOSE 5000 5001
 
-CMD [ "dotnet", "run", "--project", "AspNetCoreWebService", "--urls", "https://0.0.0.0:5000"]
+CMD [ "dotnet", "run", "--project", "AspNetCoreWebService", "--urls", "http://0.0.0.0:5000"]
