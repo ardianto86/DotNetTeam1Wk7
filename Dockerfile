@@ -27,4 +27,4 @@ RUN dotnet build
 
 EXPOSE 5000:5000
 
-CMD [ "dotnet", "run" , "--project", "AspNetCoreWebService"]
+CMD [ "dotnet", "AspNetCoreWebService\bin\Debug\netcoreapp3.0\AspNetCoreWebService.dll"]
