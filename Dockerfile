@@ -25,6 +25,6 @@ RUN dotnet restore
 
 RUN dotnet build
 
-EXPOSE 5000 5001 5002 5003 5004 5005 5006
+EXPOSE 5000 5001
 
-CMD [ "dotnet", "AspNetCoreWebService/bin/Debug/netcoreapp3.0/AspNetCoreWebService.dll"]
+CMD [ "dotnet", "run", "--project", "AspNetCoreWebService", "--urls", "https://0.0.0.0:5000"]
